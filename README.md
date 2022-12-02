@@ -1,5 +1,6 @@
 # tts-telegram-bot
-Text-To-Speech telegram bot implementation. 
+Text-To-Speech telegram bot implementation. Randomly choices
+voice of speaker taking into account the language of a given text.
 
 User sends texts to the telegram-bot.
 Dispatcher receives and pushes update to the rabbitmq queue.
