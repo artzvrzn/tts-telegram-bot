@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+bot:
+  username: ${BOT_NAME}
+  token: ${BOT_TOKEN}
+
+spring:
+  rabbitmq:
+    host: ${RABBIT_HOST}
+    port: ${RABBIT_PORT}
+    username: ${RABBIT_USER}
+    password: ${RABBIT_PASSWORD}
+
+aws:
+  s3:
+    access-key: ${S3_ACCESS}
+    secret-key: ${S3_SECRET}
+    region: ${S3_REGION}
+    bucket:
+      tts:
+        name: ${BUCKET_NAME}

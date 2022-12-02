@@ -1,0 +1,23 @@
+server:
+  port: 8082
+spring:
+  rabbitmq:
+    host: ${RABBIT_HOST}
+    port: ${RABBIT_PORT}
+    username: ${RABBIT_USER}
+    password: ${RABBIT_ADMIN}
+aws:
+  s3:
+    access-key: ${S3_ACCESS}
+    secret-key: ${S3_SECRET}
+    region: ${S3_REGION}
+    bucket:
+      tts:
+        name: ${S3_BUCKET}
+        expiration:
+          unit: MINUTES
+          value: 10
+  polly:
+    access-key: ${POLLY_ACCESS}
+    secret-key: ${POLLY_SECRET}
+    region: ${POLLY_REGION}
