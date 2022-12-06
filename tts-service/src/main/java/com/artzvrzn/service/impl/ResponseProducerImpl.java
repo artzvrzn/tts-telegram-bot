@@ -12,7 +12,7 @@ import org.telegram.telegrambots.meta.api.methods.send.SendDocument;
 @Service
 @Log4j2
 @RequiredArgsConstructor
-public class ResponseProducerImpl implements ResponseProducer {
+public class ResponseProducerImpl implements ResponseProducer<SendDocument> {
   private final RabbitTemplate rabbitTemplate;
 
   @Override
